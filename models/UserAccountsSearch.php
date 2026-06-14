@@ -65,7 +65,7 @@ class UserAccountsSearch extends UserAccounts
 
         $query->andFilterWhere(['like', 'username', $this->username])
             ->andFilterWhere(['like', 'role', $this->role])
-            ->andFilterWhere(['like', 'security_question', $this->security_question])
+            ->andFilterWhere(['like', 'security_question', $this->security_question]);
           
 
         return $dataProvider;
